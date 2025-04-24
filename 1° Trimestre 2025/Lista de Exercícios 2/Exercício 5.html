@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            text-align: center;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Tabela de Conversão de Bases</h2>
+    <table border="1">
+        <tr>
+            <th>Decimal</th>
+            <th>Binário</th>
+            <th>Octal</th>
+            <th>Hexadecimal</th>
+        </tr>
+        <script>
+            for (let i = 0; i <= 15; i++) {
+                document.write("<tr>");
+                document.write("<td>" + i + "</td>");
+                document.write("<td>" + i.toString(2) + "</td>");
+                document.write("<td>" + i.toString(8) + "</td>");
+                document.write("<td>" + i.toString(16).toUpperCase() + "</td>");
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>
