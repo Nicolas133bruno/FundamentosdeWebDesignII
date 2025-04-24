@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Tabela em HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2> Instruções e Resultados em JavaScript</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Instrução(ões)</th>
+                <th>Resultado</th>
+                <th>Observação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>var valor = 10;</td>
+                <td>—</td>
+                <td>Variável valor recebe o número 10.</td>
+            </tr>
+            <tr>
+                <td>alert(valor);</td>
+                <td>10</td>
+                <td>Exibe o valor atual da variável: 10.</td>
+            </tr>
+            <tr>
+                <td>var valor = 14;</td>
+                <td>—</td>
+                <td>Redefine a variável valor para 14.</td>
+            </tr>
+            <tr>
+                <td>var msg = "Nro =" + valor;</td>
+                <td>—</td>
+                <td>Concatenação: msg vira "Nro =14" (string + número = string).</td>
+            </tr>
+            <tr>
+                <td>alert(msg);</td>
+                <td>Nro =14</td>
+                <td>Exibe a mensagem "Nro =14".</td>
+            </tr>
+            <tr>
+                <td>var valor = "4" + 3 + 1;</td>
+                <td>"431"</td>
+                <td>Concatenação: começa com string "4", então tudo vira string.</td>
+            </tr>
+            <tr>
+                <td>var valor = 4 + 3 + "1";</td>
+                <td>"71"</td>
+                <td>Primeiro soma: 4 + 3 = 7; depois concatena com string "1" → "71".</td>
+            </tr>
+            <tr>
+                <td>var valor = "4" + 3 - 1;</td>
+                <td>42</td>
+                <td>"4" + 3 vira "43" (string), "43" - 1 vira 42 (conversão implícita).</td>
+            </tr>
+            <tr>
+                <td>var valor = "30" * 2;</td>
+                <td>60</td>
+                <td>Multiplicação força conversão para número → "30" * 2 = 60.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
